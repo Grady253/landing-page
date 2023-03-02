@@ -1,0 +1,142 @@
+html{
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+body{
+   background-color: black;
+   font-family: 'Teko', sans-serif;
+   color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    color:silver;
+    font-family: 'Lobster', cursive;
+}
+
+#headerBox{
+    border: 2px #fff solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+#honey{
+    color: rgb(242, 206, 3);
+}
+
+/* .moon{
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 75%;
+    position: absolute;
+    
+} */
+
+.bodyText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 65px;
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    padding: 0 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius:10px ;
+    color: #000;
+    gap: 10px;
+}
+
+.card-Name{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.card-Text{
+    font-size: 17px;
+    line-height: 27px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.card-Form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+}
+
+.card-Form input{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+}
+
+button{
+    padding:10px ;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(242, 206, 3);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid black;
+    width: 150px;
+}
+
+button:hover {
+    color: black;
+    transform: scale(1.1);
+    outline: 2px solid silver;
+    box-shadow: 4px 5px 17px -4px silver;
+    cursor: pointer;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(242, 206, 3);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+  
+button:hover::before {
+    width: 250%;
+}
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+}

@@ -1,7 +1,7 @@
 let loginForm = document.getElementById('form');
 
     
-loginForm.addEventListener('click', (e)=>{
+loginForm.addEventListener('submit', (e)=>{
     e.preventDefault();
 
     let userEmail = document.getElementById('email');
